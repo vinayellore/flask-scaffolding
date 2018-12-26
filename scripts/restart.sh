@@ -14,6 +14,7 @@ do
 done
 sudo chmod -R 777 ${project_path}/logger/
 mkdir -p ${project_path}/backup
+./bin/installVScodeextension.sh
 #mkdir -p ${project_path}/static/uploads;
 #if [ ! -z "${mysql_password}" ]
 #then
