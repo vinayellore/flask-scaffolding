@@ -1,0 +1,11 @@
+2018-12-26 10:46:56,504 INFO default Checking the flask scaffolding logger
+2018-12-26 10:46:56,504 DEBUG default its an error
+2018-12-26 10:46:56,504 CRITICAL default its critical
+2018-12-26 10:47:58,921 INFO default Checking the flask scaffolding logger
+2018-12-26 10:47:58,922 DEBUG default its an error
+2018-12-26 10:47:58,922 CRITICAL default its critical
+2018-12-26 10:47:58,922 WARNING default its a warning
+2018-12-26 10:48:12,913 INFO default Checking the flask scaffolding logger
+2018-12-26 10:48:12,914 DEBUG default its an error
+2018-12-26 10:48:12,914 CRITICAL default its critical
+2018-12-26 10:48:12,915 WARNING default its a warning
