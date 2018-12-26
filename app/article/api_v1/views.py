@@ -24,8 +24,8 @@ def articles():
         description=article_data.get('description', '')
     )
     article.save()
-    article_data["id"] = article.id
-    return jsonify({"success": True, "article": article_data}), 201
+    article = article_schema.dump(article)
+    return jsonify({"success": True, "article": article.data}), 201
 
 
 @article_api_blueprint.route("/<int:id>", methods=['GET'])
@@ -66,7 +66,8 @@ def update_article(id):
     article.author = article_data.get('author', article.author)
     article.description = article_data.get('description', article.description)
     article.save()
-    return jsonify({"success": True, "article": article_data}), 200
+    article = article_schema.dump(article)
+    return jsonify({"success": True, "article": article.data}), 200
 
 
 @article_api_blueprint.route("/delete/<int:id>", methods=['DELETE'])
