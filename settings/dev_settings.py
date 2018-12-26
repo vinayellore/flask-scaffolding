@@ -8,7 +8,6 @@ DEBUG = True
 LOG_ROOT = os.path.abspath(os.path.join(BASE_DIR, "logger"))
 
 
-LOGGING = get_log_settings(LOG_ROOT=LOG_ROOT, setting='development', size=5, backup_count=2)
+LOGGING = get_log_settings(
+    LOG_ROOT=LOG_ROOT, setting='development', size=5, backup_count=2)
 # LOGGING = LOGGING
-
-
