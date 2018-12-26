@@ -23,6 +23,7 @@ marshmallow==2.15.3
 marshmallow-sqlalchemy==0.14.0
 nltk==3.3
 passlib==1.7.1
+psycopg2-binary==2.7.6.1
 pycodestyle==2.4.0
 pycparser==2.18
 PyJWT==1.6.4
