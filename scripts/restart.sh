@@ -6,11 +6,11 @@ clear
 echo -e "-x-x-x-x-x-x- Preparing mendatory directories, packages and requirements -x-x-x-x-x-x-\n";
 current_date_time=`date +%FT%T`
 echo -e ${env}/bin/activate;
-mkdir -p ${project_path}/log
+mkdir -p ${project_path}/logger
 declare -a logfiles=("debug" "info" "error" "critical")
 for i in "${logfiles[@]}"
 do
-    sudo -E -H  touch ${project_path}/log/${i}.log
+    sudo -E -H  touch ${project_path}/logger/${i}.log
 done
 sudo chmod -R 777 ${project_path}/logger/
 mkdir -p ${project_path}/backup
