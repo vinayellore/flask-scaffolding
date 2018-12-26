@@ -94,5 +94,4 @@ def get_log_settings(LOG_ROOT, setting='production', size=5, backup_count=2):
         # Loggers (where does the log come from)
         'loggers': PROD_LOGGER_SETTINGS
     }
-    print(LOGGING)
     return LOGGING

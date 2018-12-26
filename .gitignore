@@ -1,0 +1,8 @@
+*.pyc
+.DS_Store
+.idea/*
+*.db
+__pycache__
+migrations
+.vscode
+.idea
