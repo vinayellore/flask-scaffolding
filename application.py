@@ -5,10 +5,11 @@ from flask import Flask, render_template
 
 # from  import commands, public, user
 from app.index.views import index_blueprint
+from app.article.api_v1.views import article_api_blueprint
 from flask_migrate import MigrateCommand
 from extensions import (
-    bcrypt, 
-    db, 
+    bcrypt,
+    db,
     migrate,
     ma,
     redis_store,
@@ -51,6 +52,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     # app.register_blueprint(public.views.blueprint)
     app.register_blueprint(index_blueprint, url_prefix="/index")
+    app.register_blueprint(article_api_blueprint, url_prefix="/api/articles")
     return None
 
 
